@@ -1,5 +1,5 @@
 name: JoinUI
 version: 0.0.1
 api: [3.0.0-ALPHA10, 3.0.0-ALPHA11, 3.O.1, 4.0.0, 3.11.1, 3.11.3]
-main: Napol\JoinUI
-author: NapolGamerTH @ AnuchitZaza
+main: Echnotical\JoinUI
+author: Echnotical
