@@ -31,13 +31,13 @@ class JoinUITask extends PluginTask{
             if (isset($data[0])) {
                 switch ($data[0]) {
                     case 0:
-                        $player->sendMessage("§f-> §aขอบคุณที่อ่านนะครับ §f:)");
+                        $player->sendMessage("§eThank you for reading");
                 }
                 return true;
             }
             return false;
         });
-        $form->setTitle(TextFormat::RESET . TextFormat::GREEN . "§f-=:> §cMC§f-§6Car§erot§aCraft§f - §eSurvival§f <:=-");
+        $form->setTitle(TextFormat::RESET . TextFormat::GREEN . "ZetsuPE - Survival ");
         $form->setContent($content);
         $form->addButton($button);
         $form->sendToPlayer($player);
