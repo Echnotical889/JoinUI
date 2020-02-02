@@ -20,17 +20,17 @@ class JoinUI extends PluginBase implements Listener{
         ]);  
     $this->Config->save(); 
     $this->Config->reload();                      
-        $this->getLogger()->info(TextFormat::YELLOW . "กำลังตรวจสอบข้อมูล....");            
+        $this->getLogger()->info(TextFormat::YELLOW . "Checking data....");            
      if($this->Config->get("Your License Number") == "a1a2s3d4"){
-         $this->getLogger()->info(TextFormat::GREEN . "อนุญาติให้ใช้ปลั๊กอินได้");     
+         $this->getLogger()->info(TextFormat::GREEN . "Allowed to use plugin");     
     $this->Eco = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");  
      }else{
-        $this->getLogger()->info(TextFormat::RED . "ไม่อนุญาติให้ใช้ปลั๊กอินได้");
+        $this->getLogger()->info(TextFormat::RED . "Not allowed to use plugin");
         $this->getPluginLoader()->disablePlugin($this);
      }   
 
     public function onDisable() : void{
-        $this->getServer()->getLogger()->alert(TextFormat::RED . "§aJoinUI §cปิดทำงานแล้ว!");
+        $this->getServer()->getLogger()->alert(TextFormat::RED . "§aJoinUI §cClosed!");
     }
 
     public function configmakerthingy() : void{
