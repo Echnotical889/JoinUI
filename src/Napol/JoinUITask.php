@@ -31,7 +31,7 @@ class JoinUITask extends PluginTask{
             if (isset($data[0])) {
                 switch ($data[0]) {
                     case 0:
-                        $player->sendMessage("§f-> §aขอบคุณที่อ่านนะครับ §f:)");
+                        $player->sendMessage("§7(§c!§7)Thank You For Reading");
                 }
                 return true;
             }
